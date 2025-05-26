@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "consular.auto_f5.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"ExampleMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

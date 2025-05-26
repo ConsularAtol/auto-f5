@@ -1,0 +1,43 @@
+{
+	"schemaVersion": 1,
+	"id": "auto-f5",
+	"version": "${version}",
+	"name": "Auto F5",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/auto-f5/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"consular.auto_f5.AutoF5"
+		],
+		"client":[
+			"consular.auto_f5.AutoF5Client"
+		],
+		"modmenu": [
+			"consular.auto_f5.AutoF5ModMenu"
+		]
+	},
+	"mixins": [
+		"auto-f5.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	},
+	"custom": {
+  		"modmenu:api": true
+	}
+}
